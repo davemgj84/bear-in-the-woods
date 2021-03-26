@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Fredericka the Great", cursive;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  background-color: #c4c0bf;
+  background-image: url("../src/assets/purty-wood.png");
+  background-attachment: fixed;
+  background-position: 0 0;
+}
