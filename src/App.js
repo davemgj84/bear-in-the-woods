@@ -5,12 +5,14 @@ import {
   Redirect,
   useLocation,
   withRouter,
+  Switch,
 } from "react-router-dom";
 import "./index.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   const _ScrollToTop = (props) => {
@@ -25,15 +27,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop>
-          <Nav />
-          <Route exact path="/">
-            <Redirect to="/home" />
-          </Route>
-          <Route path="/home" component={Home} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-        </ScrollToTop>
+        <Switch>
+          <ScrollToTop>
+            <Nav />
+            <Route exact path="/">
+              <Redirect to="/home" />
+            </Route>
+            <Route path="/home" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/projects" component={Projects} />
+            <Route path="/contact" component={Contact} />
+          </ScrollToTop>
+        </Switch>
       </BrowserRouter>
     </div>
   );

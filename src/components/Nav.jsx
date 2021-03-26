@@ -36,6 +36,18 @@ const Nav = () => {
                 color: "#ffffff",
               }}
               onClick={() => closeNav()}
+              to={"/about"}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              activeStyle={{
+                backgroundColor: "rgba(125, 110, 119, 0.4)",
+                color: "#ffffff",
+              }}
+              onClick={() => closeNav()}
               to={"/projects"}
             >
               Projects
