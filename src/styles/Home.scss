@@ -8,6 +8,14 @@
   align-items: center;
   color: #31212a;
   animation: fadeIn 1s;
+  .logo {
+    height: auto;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 300px;
+    box-shadow: 0px 5px 10px 3px #908d84;
+    margin-bottom: 16px;
+  }
   h1 {
     font-size: 48px;
     margin-bottom: 16px;
