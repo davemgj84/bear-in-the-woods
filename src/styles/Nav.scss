@@ -11,15 +11,23 @@ nav {
   position: fixed;
 
   .logo {
-    color: #bebab8;
-    letter-spacing: 5px;
-    font-size: 32px;
-    transition: ease-in-out 0.3s;
-    &:hover {
-      color: #ffffff;
+    display: flex;
+    align-items: center;
+    img {
+      width: auto;
+      height: 70px;
+      margin-right: 1rem;
     }
     a {
-      color: inherit;
+      h4 {
+        font-size: 24px;
+        letter-spacing: 5px;
+        color: #bebab8;
+        transition: ease-in-out 0.3s;
+        &:hover {
+          color: #ffffff;
+        }
+      }
     }
   }
 

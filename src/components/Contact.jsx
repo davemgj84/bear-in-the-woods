@@ -13,9 +13,9 @@ const Contact = () => {
             </a>
           </h3>
           <h3>
-            <a className="email" href="#" rel="noreferrer" target="_blank">
-              <i className="far fa-envelope "></i>ian@mail.com
-            </a>
+            {/* <a className="email" href="#" rel="noreferrer" target="_blank"> */}
+            <i className="far fa-envelope "></i>ian@mail.com
+            {/* </a> */}
           </h3>
           <div className="socials">
             <h3>
@@ -28,14 +28,14 @@ const Contact = () => {
               </a>
             </h3>
             <h3>
-              <a href="#" rel="noreferrer" target="_blank">
-                <i className="fab fa-instagram"></i>
-              </a>
+              {/* <a href="#" rel="noreferrer" target="_blank"> */}
+              <i className="fab fa-instagram"></i>
+              {/* </a> */}
             </h3>
             <h3>
-              <a href="#" rel="noreferrer" target="_blank">
-                <i className="fab fa-linkedin"></i>
-              </a>
+              {/* <a href="#" rel="noreferrer" target="_blank"> */}
+              <i className="fab fa-linkedin"></i>
+              {/* </a> */}
             </h3>
           </div>
         </div>

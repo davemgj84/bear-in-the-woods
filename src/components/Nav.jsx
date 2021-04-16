@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/Nav.scss";
+import bear from "../assets/bear.png";
 
 const Nav = () => {
   const [navActive, setNavActive] = useState(false);
@@ -9,12 +11,16 @@ const Nav = () => {
     <>
       <nav>
         <div className="logo">
-          <h4>
-            <Link to={"/home"}>
-              <i className="fas fa-tree"></i> Bear in the Woods{" "}
-              <i className="fas fa-tree"></i>
-            </Link>
-          </h4>
+          <LazyLoadImage
+            className="logo"
+            alt={"logo"}
+            src={bear}
+            effect="blur"
+            placeholderSrc={bear}
+          />
+          <Link to={"/home"}>
+            <h4>Bear in the Woods</h4>
+          </Link>
         </div>
         <ul className={navActive ? "nav-active nav-links" : "nav-links"}>
           <li>
