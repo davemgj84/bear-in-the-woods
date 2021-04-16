@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #59666d;
+  color: #171717;
   font-size: 24px;
   animation: fadeIn 1s;
 
@@ -18,17 +18,17 @@
     flex-direction: column;
 
     h1 {
-      color: #304149;
       font-size: 48px;
       letter-spacing: 2px;
       margin-bottom: 1rem;
     }
 
     h3 {
+      color: #304149;
       margin: 1.5rem;
       transition: ease-in-out 0.3s;
       &:hover {
-        color: #304149;
+        color: #59666d;
         text-shadow: 2px 2px 1px #b4b1a6;
       }
     }
