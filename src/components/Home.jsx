@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../styles/Home.scss";
 import "../../node_modules/react-lazy-load-image-component/src/effects/blur.css";
@@ -15,6 +16,15 @@ const Home = () => {
           effect="blur"
           placeholderSrc={logo}
         />
+      </div>
+      <div className="introduction">
+        <h2>" Hardest Concrete in town! "</h2>
+        <h2>" It's so smooth! "</h2>
+        <h2>" He can create anything! "</h2>
+        <h2>" His mustache is amazing! "</h2>
+        <h3>
+          <Link to={"/contact"}>Contact</Link> us now for a quote today!
+        </h3>
       </div>
     </section>
   );
