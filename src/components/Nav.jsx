@@ -19,7 +19,9 @@ const Nav = () => {
             placeholderSrc={bear}
           />
           <Link to={"/home"}>
-            <h4>Bear in the Woods</h4>
+            <h1>
+              BEAR<p>in the</p>WOODS
+            </h1>
           </Link>
         </div>
         <ul className={navActive ? "nav-active nav-links" : "nav-links"}>
