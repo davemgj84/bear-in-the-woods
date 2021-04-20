@@ -1,0 +1,24 @@
+.about {
+  height: 100vh;
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .carousel {
+      display: flex;
+      border-radius: 30px;
+      border: 3px solid #46303d;
+    }
+  }
+}
+
+// center the thumbnails - had to grab the selector from chrome dev tools
+#root > div > section > div > div:nth-child(2) > div {
+  margin: 1.5rem auto;
+}
+
+#root > div > section > div > div:nth-child(2) {
+  border: none;
+}
