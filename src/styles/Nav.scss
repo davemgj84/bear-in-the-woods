@@ -31,7 +31,7 @@ nav {
         &:hover {
           color: #ffffff;
         }
-        p {
+        span {
           font-family: "Roboto Slab", serif;
           font-weight: normal;
           font-size: 20px;
@@ -97,7 +97,7 @@ nav {
       height: 100vh;
       top: 90px;
       background-color: #46303d;
-      background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+      background-image: url("../assets/egg-shell.png");
       background-position: 0 0;
       background-attachment: fixed;
       flex-direction: column;

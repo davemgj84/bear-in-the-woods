@@ -1,25 +1,35 @@
 .about {
   height: 100vh;
   animation: fadeIn 1s;
-  .gallery {
+  .wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    .carousel {
+    .gallery {
       display: flex;
-      border-radius: 30px;
-      border: 3px solid #46303d;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      .carousel {
+        border-radius: 20px;
+        border: 3px solid #333;
+      }
     }
   }
 }
 
-// center the thumbnails - had to grab the selector from chrome dev tools
-#root > div > section > div > div:nth-child(2) > div {
-  margin: 1.5rem auto;
+.carousel .control-next.control-arrow:before {
+  border-left: 12px solid #fff !important;
 }
 
-#root > div > section > div > div:nth-child(2) {
-  border: none;
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  border-top: 12px solid transparent !important;
+  border-bottom: 12px solid transparent !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 12px solid #fff !important;
 }

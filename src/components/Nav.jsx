@@ -20,7 +20,7 @@ const Nav = () => {
           />
           <Link to={"/home"}>
             <h1>
-              BEAR<p>in the</p>WOODS
+              BEAR<span>in the</span>WOODS
             </h1>
           </Link>
         </div>
@@ -31,7 +31,7 @@ const Nav = () => {
                 backgroundColor: "rgba(125, 110, 119, 0.4)",
                 color: "#ffffff",
               }}
-              onClick={() => setNavActive((prev) => !prev)}
+              onClick={() => setNavActive(false)}
               to={"/home"}
             >
               Home
@@ -43,7 +43,7 @@ const Nav = () => {
                 backgroundColor: "rgba(125, 110, 119, 0.4)",
                 color: "#ffffff",
               }}
-              onClick={() => setNavActive((prev) => !prev)}
+              onClick={() => setNavActive(false)}
               to={"/about"}
             >
               About
@@ -55,7 +55,7 @@ const Nav = () => {
                 backgroundColor: "rgba(125, 110, 119, 0.4)",
                 color: "#ffffff",
               }}
-              onClick={() => setNavActive((prev) => !prev)}
+              onClick={() => setNavActive(false)}
               to={"/contact"}
             >
               Contact
